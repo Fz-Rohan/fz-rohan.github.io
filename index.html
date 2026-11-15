@@ -269,7 +269,7 @@
       gap: 14px;
     }
     .exploration {
-      padding: 22px;
+      padding: 24px;
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: rgba(15, 33, 36, .55);
@@ -279,6 +279,41 @@
     .exploration h3 { margin: 18px 0 8px; font-size: 1rem; letter-spacing: -.03em; }
     .exploration p { color: var(--muted); font-size: .82rem; }
     .exploration .icon { width: 35px; height: 35px; border-radius: 10px; }
+    .exploration-label {
+      display: block;
+      margin-top: 21px;
+      color: var(--teal);
+      font: 500 .63rem "JetBrains Mono", monospace;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .exploration ul {
+      display: grid;
+      gap: 7px;
+      margin-top: 10px;
+      padding-left: 16px;
+      color: var(--muted);
+      font-size: .78rem;
+    }
+    .exploration li::marker { color: var(--teal); }
+    .roadmap {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+      margin-top: 14px;
+      padding: 20px 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(7, 21, 23, .42);
+    }
+    .roadmap-step { display: flex; gap: 13px; }
+    .roadmap-number {
+      flex: 0 0 auto;
+      color: var(--teal);
+      font: 600 .72rem "JetBrains Mono", monospace;
+    }
+    .roadmap h3 { margin-bottom: 5px; font-size: .86rem; }
+    .roadmap p { color: var(--muted); font-size: .76rem; }
 
     footer {
       margin-top: 30px;
@@ -310,6 +345,7 @@
       .project-card { display: block; padding: 23px; }
       .project-link { margin-top: 24px; }
       .explorations { grid-template-columns: 1fr; }
+      .roadmap { grid-template-columns: 1fr; gap: 18px; }
       .contact-links { margin-top: 24px; text-align: left; }
     }
     @media (max-width: 430px) {
@@ -411,25 +447,57 @@
 
     <section class="shell" id="explorations">
       <div class="section-heading">
-        <div><p class="eyebrow">03 / Current direction</p><h2>What I’m exploring</h2></div>
-        <p>Growing beyond the basics by connecting biological structure, cellular function, and physical principles.</p>
+        <div><p class="eyebrow">03 / Scientific interests</p><h2>What I’m exploring</h2></div>
+        <p>Building a broader scientific perspective by connecting biological structure, cellular function, and physical principles.</p>
       </div>
       <div class="explorations">
         <article class="exploration">
           <div class="icon">◌</div>
           <h3>Histology</h3>
-          <p>Studying how tissues are organized and how microscopic structure reflects biological function.</p>
+          <p>Studying tissues at the microscopic level and learning how organization reveals biological function.</p>
+          <span class="exploration-label">Learning focus</span>
+          <ul>
+            <li>Cell and tissue organization</li>
+            <li>Microscopy and observation</li>
+            <li>Structure–function relationships</li>
+          </ul>
         </article>
         <article class="exploration">
           <div class="icon">⊙</div>
           <h3>Cell Physiology</h3>
-          <p>Learning how cells communicate, transport materials, and maintain the conditions needed for life.</p>
+          <p>Understanding how cells communicate, exchange materials, and regulate their internal environment.</p>
+          <span class="exploration-label">Learning focus</span>
+          <ul>
+            <li>Membrane transport and signaling</li>
+            <li>Cellular homeostasis</li>
+            <li>Energy and metabolism</li>
+          </ul>
         </article>
         <article class="exploration">
           <div class="icon">⌁</div>
           <h3>Physics in Biotechnology</h3>
-          <p>Exploring how forces, energy, diffusion, and measurement can explain and improve biotech processes.</p>
+          <p>Exploring how physical principles help explain biological systems and improve biotech processes.</p>
+          <span class="exploration-label">Learning focus</span>
+          <ul>
+            <li>Diffusion, forces, and energy</li>
+            <li>Measurement and uncertainty</li>
+            <li>Quantitative biological thinking</li>
+          </ul>
         </article>
+      </div>
+      <div class="roadmap">
+        <div class="roadmap-step">
+          <span class="roadmap-number">01</span>
+          <div><h3>Build the fundamentals</h3><p>Strengthen my understanding of biology, chemistry, physics, and laboratory practice.</p></div>
+        </div>
+        <div class="roadmap-step">
+          <span class="roadmap-number">02</span>
+          <div><h3>Turn concepts into data</h3><p>Use Python and scientific analysis to work with observations, measurements, and biological sequences.</p></div>
+        </div>
+        <div class="roadmap-step">
+          <span class="roadmap-number">03</span>
+          <div><h3>Apply and communicate</h3><p>Develop small research-oriented projects and explain the reasoning behind the results clearly.</p></div>
+        </div>
       </div>
     </section>
   </main>
