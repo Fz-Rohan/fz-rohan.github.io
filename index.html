@@ -263,6 +263,23 @@
     .project-link span:last-child { color: var(--teal); font-size: 1.2rem; }
     .project-link:hover { border-color: var(--line-strong); }
 
+    .explorations {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .exploration {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(15, 33, 36, .55);
+      transition: border-color .25s ease, transform .25s ease;
+    }
+    .exploration:hover { border-color: var(--line-strong); transform: translateY(-3px); }
+    .exploration h3 { margin: 18px 0 8px; font-size: 1rem; letter-spacing: -.03em; }
+    .exploration p { color: var(--muted); font-size: .82rem; }
+    .exploration .icon { width: 35px; height: 35px; border-radius: 10px; }
+
     footer {
       margin-top: 30px;
       padding: 48px 0 42px;
@@ -292,6 +309,7 @@
       .tile.education { grid-column: span 2; grid-row: auto; min-height: 290px; }
       .project-card { display: block; padding: 23px; }
       .project-link { margin-top: 24px; }
+      .explorations { grid-template-columns: 1fr; }
       .contact-links { margin-top: 24px; text-align: left; }
     }
     @media (max-width: 430px) {
@@ -390,12 +408,36 @@
         <a class="project-link" href="https://github.com/Fz-Rohan/python-learning" target="_blank" rel="noopener noreferrer"><span>dna_gc.py</span><span>↗</span></a>
       </article>
     </section>
+
+    <section class="shell" id="explorations">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / Current direction</p><h2>What I’m exploring</h2></div>
+        <p>Growing beyond the basics by connecting biological structure, cellular function, and physical principles.</p>
+      </div>
+      <div class="explorations">
+        <article class="exploration">
+          <div class="icon">◌</div>
+          <h3>Histology</h3>
+          <p>Studying how tissues are organized and how microscopic structure reflects biological function.</p>
+        </article>
+        <article class="exploration">
+          <div class="icon">⊙</div>
+          <h3>Cell Physiology</h3>
+          <p>Learning how cells communicate, transport materials, and maintain the conditions needed for life.</p>
+        </article>
+        <article class="exploration">
+          <div class="icon">⌁</div>
+          <h3>Physics in Biotechnology</h3>
+          <p>Exploring how forces, energy, diffusion, and measurement can explain and improve biotech processes.</p>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer class="shell" id="contact">
     <div class="footer-content">
       <div>
-        <p class="eyebrow">03 / Say hello</p>
+        <p class="eyebrow">04 / Say hello</p>
         <h2>Let’s keep learning.</h2>
         <p>Open to thoughtful conversations about biotechnology, code, and the ideas connecting them.</p>
       </div>
