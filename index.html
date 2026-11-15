@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fozle Rabby Rohan | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-card: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #14b8a6;
+      --accent-soft: rgba(20, 184, 166, 0.16);
+      --border: rgba(148, 163, 184, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at top, #13203d 0%, var(--bg) 40%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 4.5rem 0 3rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .domain {
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin-top: 0.9rem;
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin: 1rem auto 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    main {
+      padding: 2.5rem 0 3rem;
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.4rem;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    p {
+      color: var(--text);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    .card {
+      background: #12213b;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+
+    .card strong {
+      color: var(--accent);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .project-placeholder {
+      padding: 1rem;
+      border-radius: 12px;
+      border: 1px dashed var(--accent);
+      background: var(--accent-soft);
+      color: #d1fae5;
+      margin-top: 0.45rem;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      margin-top: 0.4rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .contact-link:hover,
+    .contact-link:focus-visible {
+      border-color: var(--accent);
+      outline: none;
+    }
+
+    footer {
+      padding: 0.5rem 0 2.2rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        padding-top: 3.2rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 1.15rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p class="domain">fozlerabby.tech</p>
+      <h1>Fozle Rabby Rohan</h1>
+      <p class="subtitle">
+        First-year Biotechnology student at the University of Teramo (UniTE), learning Python for scientific data analysis and bioinformatics.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am building a strong foundation in biotechnology while exploring programming to support modern research workflows.
+        My current focus is using Python to organize, analyze, and visualize scientific datasets for bioinformatics-driven learning.
+      </p>
+    </section>
+
+    <section id="education-skills">
+      <h2>Education &amp; Skills</h2>
+      <div class="grid">
+        <article class="card">
+          <strong>Biotechnology</strong>
+          <p class="muted">First-year undergraduate studies at UniTE in Italy.</p>
+        </article>
+        <article class="card">
+          <strong>Laboratory Techniques</strong>
+          <p class="muted">Developing practical understanding of experimental workflows.</p>
+        </article>
+        <article class="card">
+          <strong>Python</strong>
+          <p class="muted">Learning scripting for scientific computing and bioinformatics tasks.</p>
+        </article>
+        <article class="card">
+          <strong>Data Analysis</strong>
+          <p class="muted">Working on data handling and interpretation for biology-focused projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-placeholder">
+        Upcoming: Python scripts for scientific data analysis and beginner bioinformatics workflows.
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Let’s connect and collaborate on learning projects.</p>
+      <a class="contact-link" href="https://github.com/Fz-Rohan" target="_blank" rel="noopener noreferrer">
+        github.com/Fz-Rohan
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year">2026</span> Fozle Rabby Rohan
+  </footer>
+</body>
+</html>
